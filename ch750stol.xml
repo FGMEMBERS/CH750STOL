@@ -21,7 +21,7 @@ improvement by Flavien Blanc (fly) - 28/05/11:
 
   <!-- Approach configuration -->
   <approach speed="30" aoa="4" fuel="0.2">
-    <control-setting axis="/controls/engines/engine[0]/throttle" value="0.2"/>
+    <control-setting axis="/controls/engines/engine[0]/throttle" value="0.0"/>
     <control-setting axis="/controls/engines/engine[0]/mixture" value="1.0"/>
     <control-setting axis="/controls/flight/flaps" value="1.0"/>
     <control-setting axis="/sim/weight[0]/weight-lb" value ="180"/>

@@ -77,8 +77,8 @@
 <animation>
 <name>yoke</name>
     <object-name>Manche</object-name>
-    <object-name>Manche mousse</object-name>
-    <object-name>Manche mousse.001</object-name>
+    <object-name>Manche.001</object-name>
+    <object-name>Manche.002</object-name>
     <object-name>Housse.001</object-name>
 </animation>
   <animation>
