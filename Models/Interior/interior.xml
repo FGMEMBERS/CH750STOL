@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>interior.ac</path>
+
+ 
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>windowFint</object-name>
+    <object-name>windowRint</object-name>
+    <object-name>doorRglassint</object-name>
+    <object-name>doorLglassint</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <object-name>doorRglassint</object-name>
+    <object-name>doorLglassint</object-name>
+    <object-name>windowFint</object-name>
+    <object-name>windowRint</object-name>
+  </animation>
+
+<!--Doors-->
+  <animation>
+    <type>rotate</type>
+    <object-name>doorLglassint</object-name>
+    <property>instrumentation/doors/crew/position-norm</property>
+ <interpolation>
+      <entry><ind> 0 </ind><dep>  0 </dep></entry>
+      <entry><ind> 0.2 </ind><dep>  0 </dep></entry>
+      <entry><ind> 1 </ind><dep> -70 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m> 0.55109 </x-m>
+      <y-m> -0.51726 </y-m>
+      <z-m>0.49834 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z>0 </z>
+    </axis>
+  </animation>
+
+
+  <animation>
+    <type>rotate</type>
+    <object-name>doorRglassint</object-name>
+    <property>instrumentation/doors/passenger/position-norm</property>
+ <interpolation>
+      <entry><ind> 0 </ind><dep>  0 </dep></entry>
+      <entry><ind> 0.2 </ind><dep>  0 </dep></entry>
+      <entry><ind> 1 </ind><dep> 70 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m> 0.55109 </x-m>
+      <y-m> 0.51726 </y-m>
+      <z-m>0.49834 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z>0 </z>
+    </axis>
+  </animation>
+
+  <!-- Panel -->
+  <model>
+    <path>Panel/panel.xml</path>
+  </model>
+
+<!--Yoke Animation-->
+<animation>
+<name>yoke</name>
+    <object-name>Manche</object-name>
+    <object-name>Manche mousse</object-name>
+    <object-name>Manche mousse.001</object-name>
+    <object-name>Housse.001</object-name>
+</animation>
+  <animation>
+    <type>rotate</type>
+    <object-name>yoke</object-name>
+    <property>controls/flight/elevator</property>
+    <factor> 20 </factor>
+    <center>
+      <x-m>  0.25296 </x-m>
+      <z-m> -0.32</z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> -1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  <animation>
+    <type>rotate</type>
+    <object-name>yoke</object-name>
+    <property>controls/flight/aileron</property>
+    <factor> 20 </factor>
+    <center>
+      <x-m>  0.25296 </x-m>
+      <z-m> -0.32</z-m>
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+</PropertyList>
+

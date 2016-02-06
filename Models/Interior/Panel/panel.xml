@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>panel.ac</path>
+
+<!--Throttle-->
+ <animation>
+   <type>translate</type>
+   <object-name>throttle</object-name>
+   <property>controls/engines/engine[0]/throttle</property>
+   <interpolation>
+     <entry><ind> 0 </ind><dep>  0.00 </dep></entry>
+     <entry><ind> 1 </ind><dep> -0.08 </dep></entry>
+   </interpolation>
+   <axis>
+    <x> 1 </x>
+    <y> 0 </y>
+    <z> 0 </z>
+   </axis>
+  </animation>
+<!--Mixture-->
+ <animation>
+   <type>translate</type>
+   <object-name>mixture</object-name>
+   <property>controls/engines/engine[0]/mixture</property>
+   <interpolation>
+     <entry><ind> 0 </ind><dep>  0.00 </dep></entry>
+     <entry><ind> 1 </ind><dep> -0.08 </dep></entry>
+   </interpolation>
+   <axis>
+    <x> 1 </x>
+    <y> 0 </y>
+    <z> 0 </z>
+   </axis>
+  </animation>
+<!--Propeller Pitch-->
+ <animation>
+   <type>translate</type>
+   <object-name>proppitch</object-name>
+   <property>controls/engines/engine[0]/propeller-pitch</property>
+   <interpolation>
+     <entry><ind> 1 </ind><dep>  0.00 </dep></entry>
+     <entry><ind> 0 </ind><dep> 0.05 </dep></entry>
+   </interpolation>
+   <axis>
+    <x> 1 </x>
+    <y> 0 </y>
+    <z> 0 </z>
+   </axis>
+  </animation>
+
+<!--Magneto Switch-->
+<animation>
+  <type>rotate</type>
+  <object-name>magnetoswitch</object-name>
+  <property>/controls/engines/engine/magnetos</property>
+  <factor>60</factor>
+  <center>
+   <x-m>-0.01913</x-m>
+   <y-m>0.03548</y-m>
+   <z-m>-0.0183</z-m>
+  </center>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+<animation>
+  <type>rotate</type>
+  <object-name>Ignition.000</object-name>
+  <property>/controls/engines/engine/magnetos</property>
+  <factor>35</factor>
+  <center>
+   <x-m>-0.01913</x-m>
+   <y-m>0.03548</y-m>
+   <z-m>-0.0183</z-m>
+  </center>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+<!--SWITCHES-->
+<!--Alternator switch-->
+ <animation>
+    <type>pick</type>
+    <object-name>alt</object-name>
+    <action>
+      <button>0</button>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/engines/engine/master-alt</property>
+      </binding>
+      <binding>
+          <command>property-toggle</command>
+          <property>sim/model/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>alt</object-name>
+    <property>controls/engines/engine/master-alt-pos</property>
+    <factor> 40 </factor>
+    <center>
+      <x-m> -0.02346 </x-m>
+      <y-m>-0.31114 </y-m>
+      <z-m> -0.0155 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+<!--Master Switch-->
+
+ <animation>
+    <type>pick</type>
+    <object-name>master</object-name>
+    <action>
+      <button>0</button>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/engines/engine/master-bat</property>
+      </binding>
+      <binding>
+          <command>property-toggle</command>
+          <property>sim/model/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>master</object-name>
+    <property>controls/engines/engine/master-bat-pos</property>
+    <factor> 40 </factor>
+    <center>
+      <x-m> -0.02346 </x-m>
+      <y-m>-0.31114 </y-m>
+      <z-m> -0.0155 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+<!--Radio Master Switch-->
+
+ <animation>
+    <type>pick</type>
+    <object-name>radio</object-name>
+    <action>
+      <button>0</button>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/electric/radio-master</property>
+      </binding>
+      <binding>
+          <command>property-toggle</command>
+          <property>sim/model/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>radio</object-name>
+        <property>controls/electric/radio-master</property>
+    <factor> 25 </factor>
+    <center>
+      <x-m> -0.02346 </x-m>
+      <y-m>-0.31114 </y-m>
+      <z-m> -0.0155 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+<!--Landing Light Switch-->
+<animation>
+    <type>pick</type>
+    <object-name>landinglight</object-name>
+    <action>
+      <button>0</button>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/lighting/landing-lights</property>
+      </binding>
+      <binding>
+          <command>property-toggle</command>
+          <property>sim/model/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>landinglight</object-name>
+        <property>controls/lighting/landing-lights-pos</property>
+    <factor> 25 </factor>
+    <center>
+      <x-m> -0.02346 </x-m>
+      <y-m>-0.31114 </y-m>
+      <z-m> -0.0155 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+<!--Strobe Light Switch-->
+<animation>
+    <type>pick</type>
+    <object-name>strobelight</object-name>
+    <action>
+      <button>0</button>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/lighting/beacon</property>
+      </binding>
+      <binding>
+          <command>property-toggle</command>
+          <property>sim/model/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>strobelight</object-name>
+        <property>controls/lighting/beacon-pos</property>
+    <factor> 25 </factor>
+    <center>
+      <x-m> -0.02346 </x-m>
+      <y-m>-0.31114 </y-m>
+      <z-m> -0.0155 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+<!---Navigation Light Switch-->
+<animation>
+    <type>pick</type>
+    <object-name>navlight</object-name>
+    <action>
+      <button>0</button>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/lighting/nav-lights</property>
+      </binding>
+      <binding>
+          <command>property-toggle</command>
+          <property>sim/model/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>navlight</object-name>
+        <property>controls/lighting/nav-lights-pos</property>
+    <factor> 25 </factor>
+    <center>
+      <x-m> -0.02346 </x-m>
+      <y-m>-0.31114 </y-m>
+      <z-m> -0.0155 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+<!---Fuel Pump Switch-->
+<animation>
+    <type>pick</type>
+    <object-name>fuelpump</object-name>
+    <action>
+      <button>0</button>
+      <binding>
+        <command>property-toggle</command>
+        <property>/controls/engines/engine/fuel-pump</property>
+      </binding>
+      <binding>
+          <command>property-toggle</command>
+          <property>sim/model/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>fuelpump</object-name>
+        <property>/controls/engines/engine/fuel-pump-pos</property>
+    <factor> 25 </factor>
+    <center>
+      <x-m> -0.02346 </x-m>
+      <y-m>-0.31114 </y-m>
+      <z-m> -0.0155 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+
+<!--Trim switch-->
+  <animation>
+    <type>pick</type>
+    <visible>false</visible>
+    <object-name>trimup</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/flight/elevator-trim</property>
+        <step type="double">-0.001</step>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>controls/flight/trim-anim</property>
+        <value type="int">1</value>
+      </binding>          
+      <mod-up>
+        <binding>
+          <command>property-assign</command>
+          <property>controls/flight/trim-anim</property>
+          <value type="int">0</value>
+        </binding>          
+      </mod-up>
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <visible>false</visible>
+    <object-name>trimdown</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/flight/elevator-trim</property>
+        <step type="double">0.001</step>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>controls/flight/trim-anim</property>
+        <value type="int">-1</value>
+      </binding>          
+      <mod-up>
+        <binding>
+          <command>property-assign</command>
+          <property>controls/flight/trim-anim</property>
+          <value type="int">0</value>
+        </binding>          
+      </mod-up>
+    </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>trimup</object-name>
+    <object-name>trimdown</object-name>
+    <property>controls/flight/trim-anim</property>
+    <interpolation>
+      <entry><ind> -1 </ind><dep> 10 </dep></entry>
+      <entry><ind>  0 </ind><dep>   0 </dep></entry>
+      <entry><ind>  1 </ind><dep>  -10 </dep></entry>
+    </interpolation>
+  <center>
+   <x-m>-0.02622</x-m>
+   <z-m>0.05743</z-m>
+  </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+<!--We use the kt76a from Instruments-3d instead of the Garmin for the moment -->
+<model><path>Aircraft/Instruments-3d/kt76a/kt76a.xml</path>
+    <offsets>
+      <x-m>-0.03 </x-m>
+      <y-m> 0.2431 </y-m>
+      <z-m> -0.02144 </z-m>
+    </offsets></model>
+</PropertyList>
+
