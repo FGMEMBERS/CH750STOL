@@ -1,3 +1,3 @@
 This is the Zenith Aircraft CH750 STOL, a light utility STOL aircraft made for two persons.
-The superb 3d-model has been ported from the CH750 for x-plane by hydroz.net who has thankfully agreed to release it under GPL. You can get the X-plane version of this and many other superb aircraft on hydroz.net
+The superb 3d-model has been ported from the CH750 for x-plane by hydroz.net who has kindly agreed to release it under GPL. You can get the X-plane version of this and many other superb aircraft on hydroz.net
 The aircraft, respectively FDM, nasal, sounds and effects are based on the P92 by helijah et al.
