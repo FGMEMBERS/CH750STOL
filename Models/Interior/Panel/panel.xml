@@ -3,7 +3,7 @@
 <PropertyList>
 
   <path>panel.ac</path>
-
+<model><path>Dynon_D180/d180.xml</path></model>
 <!--Throttle-->
  <animation>
    <type>translate</type>
@@ -91,6 +91,17 @@
     <object-name>alt</object-name>
     <action>
       <button>0</button>
+      <binding>
+        <command>nasal</command>
+        <script>if(getprop("/controls/engines/engine/master-alt")== 0){
+setprop("/instrumentation/dynon-efis/loading-screen", 1);
+interpolate("/instrumentation/dynon-efis/ready", 1, 5);
+}else{
+setprop("/instrumentation/dynon-efis/loading-screen", 1);
+interpolate("/instrumentation/dynon-efis/ready", 0, 5);
+}
+</script>
+      </binding>
       <binding>
         <command>property-toggle</command>
         <property>controls/engines/engine/master-alt</property>

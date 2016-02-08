@@ -27,7 +27,7 @@ baboon922@hotmail.com
 
     <crank>
       <name>engstart</name>
-      <path>Aircraft/Tecnam-P92-Echo/Sounds/Startup_Patten.wav</path>
+      <path>Startup_Patten.wav</path>
       <property>engines/engine/cranking</property>
       <volume>
         <offset>-0.6</offset>
@@ -39,7 +39,7 @@ baboon922@hotmail.com
     <crank>
       <name>crank</name>
       <mode>looped</mode>
-      <path>Aircraft/Tecnam-P92-Echo/Sounds/Startup_Patten.wav</path>
+      <path>Startup_Patten.wav</path>
       <condition>
         <property>engines/engine/cranking</property>
         <not>
@@ -56,7 +56,7 @@ baboon922@hotmail.com
     <crank>
       <name>cough</name>
       <mode>looped</mode>
-      <path>Aircraft/Tecnam-P92-Echo/Sounds/Lancement_Patten.wav</path>
+      <path>Lancement_Patten.wav</path>
       <condition>
         <and>
                <less-than>
@@ -81,7 +81,7 @@ baboon922@hotmail.com
 <engine>
       <name>ralenti</name>
       <mode>looped</mode>
-      <path>Aircraft/Tecnam-P92-Echo/Sounds/Ralenti_Patten.wav</path>
+      <path>Ralenti_Patten.wav</path>
       <condition>
         <and>
                <less-than>
@@ -130,7 +130,7 @@ baboon922@hotmail.com
     <engine>
       <name>engine</name>
       <mode>looped</mode>
-      <path>Aircraft/Tecnam-P92-Echo/Sounds/Engine_external-Patten.wav</path>
+      <path>Engine_external-Patten.wav</path>
       <condition>
         <and>
           <greater-than>
@@ -174,7 +174,7 @@ baboon922@hotmail.com
     <engine-internal>
       <name>ralenti-internal</name>
       <mode>looped</mode>
-      <path>Aircraft/Tecnam-P92-Echo/Sounds/Ralenti_internal_Patten.wav</path>
+      <path>Ralenti_internal_Patten.wav</path>
       <condition>
         <and>
           <property>sim/current-view/internal</property>
@@ -217,7 +217,7 @@ baboon922@hotmail.com
   <engine-internal>
       <name>engine-internal</name>
       <mode>looped</mode>
-      <path>Aircraft/Tecnam-P92-Echo/Sounds/Engine_internal_Patten.wav</path>
+      <path>Engine_internal_Patten.wav</path>
       <condition>
         <and>
           <property>sim/current-view/internal</property>
@@ -290,7 +290,7 @@ baboon922@hotmail.com
     <rumble>
       <name>rumble Front</name>
       <mode>looped</mode>
-      <path>Aircraft/Tecnam-P92-Echo/Sounds/BaBoOn-P92-echo-Rumble.wav</path>
+      <path>BaBoOn-P92-echo-Rumble.wav</path>
       <condition>
           <property>/gear/gear[0]/wow</property>
       </condition>
@@ -313,7 +313,7 @@ baboon922@hotmail.com
     <rumble>
       <name>rumble Right</name>
       <mode>looped</mode>
-      <path>Aircraft/Tecnam-P92-Echo/Sounds/BaBoOn-P92-echo-Rumble.wav</path>
+      <path>BaBoOn-P92-echo-Rumble.wav</path>
       <condition>
         <property>/gear/gear[1]/wow</property>
       </condition>
@@ -336,7 +336,7 @@ baboon922@hotmail.com
     <rumble>
       <name>rumble Left</name>
       <mode>looped</mode>
-      <path>Aircraft/Tecnam-P92-Echo/Sounds/BaBoOn-P92-echo-Rumble.wav</path>
+      <path>BaBoOn-P92-echo-Rumble.wav</path>
       <condition>
         <property>/gear/gear[2]/wow</property>
       </condition>
@@ -359,7 +359,7 @@ baboon922@hotmail.com
     <squeal>
       <name>squeal Front</name>
       <mode>once</mode>
-      <path>Aircraft/Tecnam-P92-Echo/Sounds/BaBoOn-P92-echo-Tire-Squeal.wav</path>
+      <path>BaBoOn-P92-echo-Tire-Squeal.wav</path>
       <condition>
         <property>/gear/gear[0]/wow</property>
       </condition>
@@ -398,7 +398,7 @@ baboon922@hotmail.com
     <squeal>
       <name>squeal Right</name>
       <mode>once</mode>
-      <path>Aircraft/Tecnam-P92-Echo/Sounds/BaBoOn-P92-echo-Tire-Squeal.wav</path>
+      <path>BaBoOn-P92-echo-Tire-Squeal.wav</path>
       <condition>
         <property>/gear/gear[1]/wow</property>
       </condition>
@@ -437,7 +437,7 @@ baboon922@hotmail.com
     <squeal>
       <name>squeal Left</name>
       <mode>once</mode>
-      <path>Aircraft/Tecnam-P92-Echo/Sounds/BaBoOn-P92-echo-Tire-Squeal.wav</path>
+      <path>BaBoOn-P92-echo-Tire-Squeal.wav</path>
       <condition>
         <property>/gear/gear[2]/wow</property>
       </condition>
@@ -517,7 +517,7 @@ baboon922@hotmail.com
     <contact>
       <name>ground contact Front</name>
       <mode>once</mode>
-      <path>Aircraft/Tecnam-P92-Echo/Sounds/BaBoOn-P92-echo-Ground_contact.wav</path>
+      <path>BaBoOn-P92-echo-Ground_contact.wav</path>
       <max-dist>10</max-dist>
       <reference-dist>5</reference-dist>
       <condition>
@@ -541,7 +541,7 @@ baboon922@hotmail.com
     <contact>
       <name>ground contact Right</name>
       <mode>once</mode>
-      <path>Aircraft/Tecnam-P92-Echo/Sounds/BaBoOn-P92-echo-Ground_contact.wav</path>
+      <path>BaBoOn-P92-echo-Ground_contact.wav</path>
       <max-dist>10</max-dist>
       <reference-dist>5</reference-dist>
       <condition>
@@ -565,7 +565,7 @@ baboon922@hotmail.com
     <contact>
       <name>ground contact Left</name>
       <mode>once</mode>
-      <path>Aircraft/Tecnam-P92-Echo/Sounds/BaBoOn-P92-echo-Ground_contact.wav</path>
+      <path>BaBoOn-P92-echo-Ground_contact.wav</path>
       <max-dist>10</max-dist>
       <reference-dist>5</reference-dist>
       <condition>
@@ -589,7 +589,7 @@ baboon922@hotmail.com
     <flap>
       <name>flaps</name>
       <mode>in-transit</mode>
-      <path>Aircraft/Tecnam-P92-Echo/Sounds/BaBoOn-P92-echo-Flaps.wav</path>
+      <path>BaBoOn-P92-echo-Flaps.wav</path>
       <property>/surface-positions/flap-pos-norm</property>
       <volume>
         <factor>0.3</factor>
@@ -601,7 +601,7 @@ baboon922@hotmail.com
     <wind>
       <name>wind</name>
       <mode>looped</mode>
-      <path>Aircraft/Tecnam-P92-Echo/Sounds/BaBoOn-P92-echo-Wind.wav</path>
+      <path>BaBoOn-P92-echo-Wind.wav</path>
       <condition>
         <and>
           <property>velocities/airspeed-kt</property>
@@ -648,7 +648,7 @@ baboon922@hotmail.com
     <wind>
       <name>wind-internal</name>
       <mode>looped</mode>
-      <path>Aircraft/Tecnam-P92-Echo/Sounds/BaBoOn-P92-echo-Wind.wav</path>
+      <path>BaBoOn-P92-echo-Wind.wav</path>
       <condition>
         <and>
           <property>velocities/airspeed-kt</property>
@@ -692,7 +692,7 @@ baboon922@hotmail.com
     <crash>
       <name>intense ground contact</name>
       <mode>once</mode>
-      <path>Aircraft/Tecnam-P92-Echo/Sounds/BaBoOn-P92-echo-Explosion.wav</path>
+      <path>BaBoOn-P92-echo-Explosion.wav</path>
       <property>sim/crashed</property>
       <volume>
         <factor>1</factor>
@@ -733,7 +733,7 @@ baboon922@hotmail.com
     <door>
       <name>close crew frontdoor</name>
       <mode>once</mode>
-      <path>Aircraft/Tecnam-P92-Echo/Sounds/BaBoOn-P92-echo-Door_close.wav</path>
+      <path>BaBoOn-P92-echo-Door_close.wav</path>
       <condition>
         <equals>
           <property>instrumentation/doors/crew/position-norm</property>
@@ -755,7 +755,7 @@ baboon922@hotmail.com
     <door>
       <name>close passenger frontdoor</name>
       <mode>once</mode>
-      <path>Aircraft/Tecnam-P92-Echo/Sounds/BaBoOn-P92-echo-Door_close.wav</path>
+      <path>BaBoOn-P92-echo-Door_close.wav</path>
       <condition>
         <equals>
           <property>instrumentation/doors/passenger/position-norm</property>
@@ -777,7 +777,7 @@ baboon922@hotmail.com
     <door>
       <name>open crew frontdoor</name>
       <mode>once</mode>
-      <path>Aircraft/Tecnam-P92-Echo/Sounds/BaBoOn-P92-echo-Door_open.wav</path>
+      <path>BaBoOn-P92-echo-Door_open.wav</path>
       <condition>
         <greater-than>
           <property>instrumentation/doors/crew/position-norm</property>
@@ -799,7 +799,7 @@ baboon922@hotmail.com
     <door>
       <name>open passenger frontdoor</name>
       <mode>once</mode>
-      <path>Aircraft/Tecnam-P92-Echo/Sounds/BaBoOn-P92-echo-Door_open.wav</path>
+      <path>BaBoOn-P92-echo-Door_open.wav</path>
       <condition>
         <greater-than>
           <property>instrumentation/doors/passenger/position-norm</property>
@@ -821,7 +821,7 @@ baboon922@hotmail.com
     <click>
       <name>switches on</name>
       <mode>once</mode>
-      <path>Aircraft/Tecnam-P92-Echo/Sounds/BaBoOn-P92-echo-Click.wav</path>
+      <path>BaBoOn-P92-echo-Click.wav</path>
       <max-dist>2</max-dist>
       <reference-dist>1</reference-dist>
       <condition>
@@ -840,7 +840,7 @@ baboon922@hotmail.com
     <click>
       <name>switches off</name>
       <mode>once</mode>
-      <path>Aircraft/Tecnam-P92-Echo/Sounds/BaBoOn-P92-echo-Click.wav</path>
+      <path>BaBoOn-P92-echo-Click.wav</path>
       <max-dist>2</max-dist>
       <reference-dist>1</reference-dist>
       <condition>

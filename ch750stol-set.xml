@@ -119,7 +119,11 @@
 
     <menubar include="Dialogs/menu.xml"/>
   </sim>
-
+<instrumentation>
+	<dynon-efis>
+		<loading-screen>1</loading-screen>
+	</dynon-efis>
+</instrumentation>
   <input>
     <keyboard include="Nasal/keyboard.xml"/>
   </input>
